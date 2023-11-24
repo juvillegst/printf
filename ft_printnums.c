@@ -6,13 +6,13 @@
 /*   By: juvilleg <juvilleg@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:20:00 by juvilleg          #+#    #+#             */
-/*   Updated: 2023/11/21 15:46:56 by juvilleg         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:42:55 by juvilleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printnum(int num)
+static void	ft_printnum(int num)
 {
 	if (num == -2147483648)
 	{

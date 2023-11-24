@@ -6,13 +6,13 @@
 /*   By: juvilleg <juvilleg@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:24:19 by juvilleg          #+#    #+#             */
-/*   Updated: 2023/11/21 15:57:28 by juvilleg         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:42:41 by juvilleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printunsg(unsigned int num)
+static void	ft_printunsg(unsigned int num)
 {
 	if (num > 9)
 		ft_printunsg(num / 10);

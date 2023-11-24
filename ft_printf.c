@@ -6,7 +6,7 @@
 /*   By: juvilleg <juvilleg@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:34:36 by juvilleg          #+#    #+#             */
-/*   Updated: 2023/11/24 11:33:04 by juvilleg         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:43:35 by juvilleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_printchar(char c)
 	return (cont);
 }
 
-int	ft_printstr(char const *str)
+static int	ft_printstr(char const *str)
 {
 	int	i;
 
@@ -41,7 +41,7 @@ int	ft_printstr(char const *str)
 	return (i);
 }
 
-int	ft_format(char c, va_list arg, int cont)
+static int	ft_format(char c, va_list arg, int cont)
 {
 	if (c == '%')
 		cont += ft_printchar('%');

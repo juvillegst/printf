@@ -6,13 +6,13 @@
 /*   By: juvilleg <juvilleg@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 17:16:21 by juvilleg          #+#    #+#             */
-/*   Updated: 2023/11/21 17:47:34 by juvilleg         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:42:30 by juvilleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printhexapchar(uintptr_t num)
+static void	ft_printhexapchar(uintptr_t num)
 {
 	if (num == 10)
 		ft_printchar('a');
@@ -28,7 +28,7 @@ void	ft_printhexapchar(uintptr_t num)
 		ft_printchar('f');
 }
 
-void	ft_printhexap(uintptr_t num)
+static void	ft_printhexap(uintptr_t num)
 {
 	int	res;
 	int	quot;

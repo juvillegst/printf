@@ -6,13 +6,13 @@
 /*   By: juvilleg <juvilleg@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:20:43 by juvilleg          #+#    #+#             */
-/*   Updated: 2023/11/21 18:01:59 by juvilleg         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:41:59 by juvilleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printhexachar(unsigned int num, int cap)
+static void	ft_printhexachar(unsigned int num, int cap)
 {
 	if (num == 10)
 		ft_printchar('a' - cap);
@@ -28,7 +28,7 @@ void	ft_printhexachar(unsigned int num, int cap)
 		ft_printchar('f' - cap);
 }
 
-void	ft_printhexa(unsigned int num, int cap)
+static void	ft_printhexa(unsigned int num, int cap)
 {
 	int	res;
 	int	quot;
