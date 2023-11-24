@@ -6,7 +6,7 @@
 /*   By: juvilleg <juvilleg@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:34:36 by juvilleg          #+#    #+#             */
-/*   Updated: 2023/11/21 18:04:54 by juvilleg         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:33:04 by juvilleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,17 +85,3 @@ int	ft_printf(char const *str, ...)
 	va_end(arg);
 	return (cont);
 }
-
-//int	main()
-//{
-//	const char *test = NULL;
-//	int test = 0;
-//	int num = ft_printf("%: %%\nc: %c\ns: %s\np: %p\nd: %d\ni: %i\nu: %u\nx: %x\nX: %X",);
-//	printf("\n");
-//	int num2 = printf("%x", );
-//	printf("\n");
-//	printf("%d", num);
-//	printf("\n");
-//	printf("%d", num2);
-//	printf("\n");
-//}
